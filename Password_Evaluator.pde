@@ -7,7 +7,7 @@
 *Goto: https://processing.org for more information
 */
 
-String s1, s2, myText = "";
+String s1="", s2="", myText = "";
 int num=0;
 int flag=0;
 int wt=800;
