@@ -44,7 +44,19 @@ void keyPressed() {
   } else if (keyCode != CONTROL && keyCode != ALT) {
     myText = myText + key;
   } else {
-    s1=myText;
+    s1=trim(myText);
+    println("s1="+s1+" mytext="+myText);
+    String s3="";
+    int len=s1.length();
+    println("s1="+s1+" len="+len);
+    for (int i=0;i<len;i++){
+      for (int j=0;j<myE.length;j++){
+          if (s1.charAt(i)==myE[j]){
+               s3+=str(myE[j]);
+          }//if
+      }
+    }//for-for
+    s1=s3;
     myText="";
     num=2;
     mylen=s1.length();
